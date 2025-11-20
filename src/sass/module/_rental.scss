@@ -1,0 +1,245 @@
+@use 'global' as *;
+
+.rental {
+  position: relative;
+  padding: rem(200) 0;
+  background-color: var(--white);
+}
+
+.rental__inner {
+  position: relative;
+  max-width: rem(1440);
+  margin: 0 auto;
+  padding: 0 var(--padding-pc);
+}
+
+.rental__left {
+  position: absolute;
+  left: rem(98);
+  top: rem(5326);
+  width: rem(501);
+}
+
+.rental__logo {
+  width: rem(185);
+  height: rem(185);
+  margin-bottom: rem(65);
+}
+
+.rental__logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.rental__title-en {
+  font-family: var(--en-font);
+  font-size: rem(28);
+  font-weight: var(--bold);
+  color: var(--brown);
+  letter-spacing: rem(14);
+  line-height: 2;
+  margin: 0 0 rem(133);
+}
+
+.rental__title-jp {
+  font-family: var(--base-font-family);
+  font-size: rem(22);
+  font-weight: var(--bold);
+  color: var(--brack);
+  letter-spacing: rem(3.96);
+  line-height: 2;
+  margin: 0 0 rem(72);
+}
+
+.rental__text {
+  font-family: var(--base-font-family);
+  font-size: rem(16);
+  font-weight: var(--regular);
+  color: var(--brack);
+  letter-spacing: rem(1.92);
+  line-height: 2;
+  margin: 0 0 rem(410);
+}
+
+.rental__more {
+  text-align: left;
+}
+
+.rental__more-text {
+  font-family: var(--en-font);
+  font-size: rem(22);
+  font-weight: var(--bold);
+  color: var(--brack);
+  letter-spacing: rem(2.64);
+  line-height: 2;
+  margin: 0;
+}
+
+.rental__right {
+  position: absolute;
+  left: rem(599);
+  top: rem(5326);
+  width: rem(753);
+  height: rem(630);
+}
+
+.rental__gallery {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.rental__gallery-item {
+  position: absolute;
+}
+
+.rental__gallery-item:nth-of-type(1) {
+  left: rem(-55);
+  top: rem(-6.01);
+  width: rem(291);
+  height: rem(193.307);
+  mask-image: url('../images/rental/rental_01_mask.svg');
+  mask-size: rem(182) rem(181.288);
+  mask-position: rem(55) rem(6.01);
+  mask-repeat: no-repeat;
+}
+
+.rental__gallery-item:nth-of-type(2) {
+  left: rem(93);
+  top: rem(218.35);
+  width: rem(616);
+  height: rem(411.653);
+  mask-image: url('../images/rental/rental_02_mask.svg');
+  mask-size: rem(527) rem(352.56);
+  mask-position: rem(44) rem(59.094);
+  mask-repeat: no-repeat;
+}
+
+.rental__gallery-item:nth-of-type(3) {
+  left: rem(442);
+  top: rem(16.03);
+  width: rem(331);
+  height: rem(221.351);
+  mask-image: url('../images/rental/rental_03_mask.svg');
+  mask-size: rem(262) rem(186.296);
+  mask-position: rem(49) rem(18.029);
+  mask-repeat: no-repeat;
+}
+
+.rental__gallery-item:nth-of-type(4) {
+  left: rem(491);
+  top: rem(277.44);
+  width: rem(616);
+  height: rem(411.653);
+  mask-image: url('../images/rental/rental_04_mask.svg');
+  mask-size: rem(527) rem(352.56);
+  mask-position: rem(44) rem(59.094);
+  mask-repeat: no-repeat;
+}
+
+.rental__gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@include mq {
+  .rental {
+    padding: rem(80) 0;
+  }
+
+  .rental__inner {
+    padding: 0 var(--padding-sp);
+  }
+
+  .rental__left {
+    position: static;
+    width: 100%;
+    margin-bottom: rem(40);
+  }
+
+  .rental__logo {
+    width: rem(120);
+    height: rem(120);
+    margin: 0 auto rem(20);
+  }
+
+  .rental__title-en {
+    font-size: rem(24);
+    text-align: center;
+    margin-bottom: rem(20);
+  }
+
+  .rental__title-jp {
+    font-size: rem(18);
+    text-align: center;
+    margin-bottom: rem(20);
+  }
+
+  .rental__text {
+    font-size: rem(14);
+    text-align: center;
+    margin-bottom: rem(20);
+  }
+
+  .rental__more {
+    text-align: center;
+    margin-bottom: rem(40);
+  }
+
+  .rental__more-text {
+    font-size: rem(18);
+  }
+
+  .rental__right {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .rental__gallery {
+    position: static;
+    height: auto;
+  }
+
+  .rental__gallery-item {
+    position: static;
+    margin-bottom: rem(20);
+    width: 100%;
+    height: auto;
+    mask: none;
+  }
+
+  .rental__gallery-item:nth-of-type(1) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .rental__gallery-item:nth-of-type(2) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .rental__gallery-item:nth-of-type(3) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .rental__gallery-item:nth-of-type(4) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .rental__gallery-img {
+    height: auto;
+  }
+}

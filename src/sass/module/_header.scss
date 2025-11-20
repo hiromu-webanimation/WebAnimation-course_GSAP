@@ -1,0 +1,154 @@
+@use 'global' as *;
+
+.header {
+  position: relative;
+  height: rem(90);
+  background-color: var(--base);
+}
+
+.header__inner {
+  position: relative;
+  max-width: rem(1440);
+  margin: 0 auto;
+  padding: 0 var(--padding-pc);
+  height: 100%;
+}
+
+.header__left {
+  position: absolute;
+  left: rem(107);
+  top: rem(91);
+  display: flex;
+  align-items: flex-start;
+  gap: rem(30);
+}
+
+.header__logo {
+  width: rem(165);
+  height: rem(150);
+  flex-shrink: 0;
+}
+
+.header__logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header__nav {
+  margin-top: rem(202);
+}
+
+.header__nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: rem(37);
+}
+
+.header__nav-item {
+  margin: 0;
+}
+
+.header__nav-link {
+  font-family: var(--en-font);
+  font-size: rem(14);
+  font-weight: var(--bold);
+  color: var(--brown);
+  letter-spacing: rem(1.68);
+  text-decoration: none;
+}
+
+.header__right {
+  position: absolute;
+  right: rem(65);
+  top: rem(28);
+  display: flex;
+  align-items: center;
+  gap: rem(24);
+}
+
+.header__subtitle {
+  font-family: var(--base-font-family);
+  font-size: rem(14);
+  font-weight: var(--bold);
+  color: var(--brown);
+  letter-spacing: rem(2.66);
+  white-space: nowrap;
+  margin: 0;
+}
+
+.header__sns {
+  display: flex;
+  gap: rem(24);
+}
+
+.header__sns-link {
+  width: rem(24);
+  height: rem(24);
+  display: block;
+}
+
+.header__sns-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header__menu-btn {
+  width: rem(51.91);
+  height: rem(32);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.header__menu-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@include mq {
+  .header {
+    height: rem(60);
+  }
+
+  .header__inner {
+    padding: 0 var(--padding-sp);
+  }
+
+  .header__left {
+    left: rem(20);
+    top: rem(10);
+    gap: rem(20);
+  }
+
+  .header__logo {
+    width: rem(100);
+    height: rem(90);
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__right {
+    right: rem(20);
+    top: rem(15);
+    gap: rem(16);
+  }
+
+  .header__subtitle {
+    display: none;
+  }
+
+  .header__menu-btn {
+    width: rem(40);
+    height: rem(30);
+  }
+}

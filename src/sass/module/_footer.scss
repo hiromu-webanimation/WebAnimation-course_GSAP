@@ -1,0 +1,37 @@
+@use 'global' as *;
+
+.footer {
+  padding: rem(40) 0;
+  background-color: var(--white);
+}
+
+.footer__inner {
+  max-width: rem(1440);
+  margin: 0 auto;
+  padding: 0 var(--padding-pc);
+  text-align: center;
+}
+
+.footer__copyright {
+  font-family: var(--base-font-family);
+  font-size: rem(16);
+  font-weight: var(--regular);
+  color: var(--brack);
+  letter-spacing: rem(1.92);
+  margin: 0;
+}
+
+@include mq {
+  .footer {
+    padding: rem(30) 0;
+  }
+
+  .footer__inner {
+    padding: 0 var(--padding-sp);
+  }
+
+  .footer__copyright {
+    font-size: rem(14);
+  }
+}
+

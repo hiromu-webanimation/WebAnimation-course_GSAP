@@ -1,0 +1,277 @@
+@use 'global' as *;
+
+.cafe {
+  padding: rem(200) 0;
+  background-color: var(--white);
+  position: relative;
+}
+
+.cafe::before {
+  content: '';
+  position: absolute;
+  top: rem(-200);
+  left: 0;
+  right: 0;
+  height: rem(200);
+  background-image: url('../images/common/common_wave.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cafe__inner {
+  max-width: rem(1440);
+  margin: 0 auto;
+  padding: 0 var(--padding-pc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(40);
+}
+
+.cafe__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(20);
+  text-align: center;
+}
+
+.cafe__logo {
+  width: rem(185);
+  height: rem(185);
+  flex-shrink: 0;
+}
+
+.cafe__logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cafe__title-en {
+  font-family: var(--en-font);
+  font-size: rem(28);
+  font-weight: var(--bold);
+  color: var(--brown);
+  letter-spacing: rem(14);
+  line-height: 2;
+  margin: 0;
+}
+
+.cafe__title-jp {
+  font-family: var(--base-font-family);
+  font-size: rem(22);
+  font-weight: var(--bold);
+  color: var(--brack);
+  letter-spacing: rem(3.96);
+  line-height: 2;
+  margin: 0;
+}
+
+.cafe__text {
+  font-family: var(--base-font-family);
+  font-size: rem(16);
+  font-weight: var(--regular);
+  color: var(--brack);
+  letter-spacing: rem(1.92);
+  line-height: 2;
+  margin: 0;
+  text-align: center;
+  max-width: rem(450);
+}
+
+.cafe__menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(20);
+  width: 100%;
+  max-width: rem(1396);
+}
+
+.cafe__menu-item {
+  width: 100%;
+  height: rem(289);
+  mask-image: url('../images/cafe/cafe_01_mask.svg');
+  mask-size: rem(432) rem(289);
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.cafe__menu-item:nth-of-type(1) {
+  mask-position: rem(20) rem(27);
+}
+
+.cafe__menu-item:nth-of-type(2) {
+  mask-position: rem(28) 0;
+}
+
+.cafe__menu-item:nth-of-type(3) {
+  mask-position: rem(14) 0;
+}
+
+.cafe__menu-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cafe__more {
+  text-align: center;
+}
+
+.cafe__more-text {
+  font-family: var(--en-font);
+  font-size: rem(22);
+  font-weight: var(--bold);
+  color: var(--brack);
+  letter-spacing: rem(2.64);
+  line-height: 2;
+  margin: 0;
+}
+
+.cafe__marche {
+  position: relative;
+  width: 100%;
+  max-width: rem(888);
+  margin-top: rem(40);
+}
+
+.cafe__marche-badge {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: rem(210);
+  height: rem(32);
+  background-color: var(--brown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.cafe__marche-badge::before {
+  content: '出展者募集中';
+  font-family: var(--base-font-family);
+  font-size: rem(16);
+  font-weight: var(--bold);
+  color: var(--milktea);
+  letter-spacing: rem(2.4);
+}
+
+.cafe__marche-box {
+  margin-top: rem(24);
+  padding: rem(55.5) rem(80);
+  background-color: var(--milktea);
+  border: 1px solid var(--brown);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(40);
+}
+
+.cafe__marche-title {
+  font-family: var(--base-font-family);
+  font-size: rem(24);
+  font-weight: var(--bold);
+  color: var(--brack);
+  letter-spacing: rem(12);
+  line-height: 2;
+  margin: 0;
+  text-align: center;
+}
+
+.cafe__marche-text {
+  font-family: var(--base-font-family);
+  font-size: rem(16);
+  font-weight: var(--regular);
+  color: var(--brack);
+  letter-spacing: rem(1.92);
+  line-height: 2;
+  margin: 0;
+  text-align: center;
+  max-width: rem(728);
+}
+
+.cafe__marche-link {
+  width: rem(88);
+  height: rem(88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  border: 1px solid var(--brown);
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.cafe__marche-icon {
+  width: rem(54);
+  height: rem(54);
+  object-fit: contain;
+}
+
+@include mq {
+  .cafe {
+    padding: rem(80) 0;
+  }
+
+  .cafe__inner {
+    padding: 0 var(--padding-sp);
+    gap: rem(30);
+  }
+
+  .cafe__logo {
+    width: rem(120);
+    height: rem(120);
+  }
+
+  .cafe__title-en {
+    font-size: rem(24);
+  }
+
+  .cafe__title-jp {
+    font-size: rem(18);
+  }
+
+  .cafe__text {
+    font-size: rem(14);
+  }
+
+  .cafe__menu {
+    grid-template-columns: 1fr;
+    gap: rem(20);
+  }
+
+  .cafe__menu-item {
+    mask: none;
+    height: auto;
+  }
+
+  .cafe__menu-img {
+    height: auto;
+  }
+
+  .cafe__more-text {
+    font-size: rem(18);
+  }
+
+  .cafe__marche {
+    max-width: 100%;
+  }
+
+  .cafe__marche-box {
+    padding: rem(30) rem(20);
+    gap: rem(30);
+  }
+
+  .cafe__marche-title {
+    font-size: rem(20);
+  }
+
+  .cafe__marche-text {
+    font-size: rem(14);
+    max-width: 100%;
+  }
+}

@@ -16,12 +16,223 @@
     <meta property="og:site_name" content="" />
     <meta property="og:description" content="" />
     <!-- ファビコン -->
-    <link rel="”icon”" href="" />
+    <link rel=""icon"" href="" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Acumin+Pro:wght@700&family=Noto+Sans+JP:wght@400;700&family=Tangerine:wght@700&display=swap" rel="stylesheet" />
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./js/script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__left">
+          <div class="header__logo">
+            <img src="./images/common/common_logo_white.png" alt="NOEUD ロゴ" class="header__logo-img" />
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#concept" class="header__nav-link">Concept</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#cafe" class="header__nav-link">Cafe</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#rental" class="header__nav-link">Rentalspace</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#access" class="header__nav-link">Access</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right">
+          <p class="header__subtitle">カフェ＆レンタルスペース NOEUD</p>
+          <div class="header__sns">
+            <a href="#" class="header__sns-link" aria-label="Instagram">
+              <img src="./images/common/common_instagram.png" alt="Instagram" class="header__sns-icon" />
+            </a>
+            <a href="#" class="header__sns-link" aria-label="Facebook">
+              <img src="./images/common/common_facebook.png" alt="Facebook" class="header__sns-icon" />
+            </a>
+          </div>
+          <button class="header__menu-btn" aria-label="メニュー">
+            <img src="./images/common/common_menu_icon.svg" alt="メニュー" class="header__menu-icon" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="fv" id="fv">
+        <div class="fv__bg">
+          <img src="./images/fv/fv_bg.png" alt="NOEUD メインビジュアル" class="fv__bg-img" />
+        </div>
+        <div class="fv__content">
+          <h1 class="fv__title">
+            Your Space,<br />
+            Your Pace
+          </h1>
+        </div>
+      </section>
+
+      <section class="concept" id="concept">
+        <div class="concept__inner">
+          <div class="concept__left">
+            <div class="concept__gallery">
+              <div class="concept__gallery-item">
+                <img src="./images/concept/concept_01.png" alt="アフォガート" class="concept__gallery-img" />
+              </div>
+              <div class="concept__gallery-item">
+                <img src="./images/concept/concept_02.png" alt="カフェラテ" class="concept__gallery-img" />
+              </div>
+              <div class="concept__gallery-item">
+                <img src="./images/concept/concept_03.png" alt="レモンソーダ" class="concept__gallery-img" />
+              </div>
+            </div>
+          </div>
+          <div class="concept__right">
+            <div class="concept__logo">
+              <img src="./images/common/common_logo_brown.png" alt="NOEUD ロゴ" class="concept__logo-img" />
+            </div>
+            <h2 class="concept__title-en">Concept</h2>
+            <h3 class="concept__title-jp">カフェでほっと一息、<br />多目的スペースで<br />毎日をもっと豊かに</h3>
+            <p class="concept__text">ソフトクリームとコーヒーが人気のカフェスペースと ワークショップなどに使えるレンタルスペースを<br />併設しています。</p>
+            <p class="concept__text">"NOEUD"はフランス語で"結び目"を意味しており<br />人と人との繋がりが生まれる場所になりますように。<br />という願いが込められています。</p>
+          </div>
+          <div class="concept__wood">
+            <img src="./images/concept/concept_wood.png" alt="ウッドデッキ" class="concept__wood-img" />
+          </div>
+        </div>
+      </section>
+
+      <section class="cafe" id="cafe">
+        <div class="cafe__inner">
+          <div class="cafe__header">
+            <div class="cafe__logo">
+              <img src="./images/common/common_logo_brown.png" alt="NOEUD ロゴ" class="cafe__logo-img" />
+            </div>
+            <h2 class="cafe__title-en">Cafe</h2>
+            <h3 class="cafe__title-jp">贅沢なミルクから作るごほうびソフトクリーム</h3>
+            <p class="cafe__text">当店自慢のソフトクリームは<br />天塩町「宇野牧場」の<br />オーガニックグラスフェッドミルクを<br />使用しています。<br />牧草を中心とした自然の食事で育てられた<br />牛のミルクは濃厚でありながら爽やかな風味が特徴。<br /><br />ソフトクリームとも相性がいい<br />上富良野町「kaneko coffee beans」<br />ブレンドコーヒー、<br />自家製ソーダなどのドリンクとともにお楽しみください</p>
+          </div>
+          <div class="cafe__menu">
+            <div class="cafe__menu-item">
+              <img src="./images/cafe/cafe_01.png" alt="ソフトクリーム" class="cafe__menu-img" />
+            </div>
+            <div class="cafe__menu-item">
+              <img src="./images/cafe/cafe_02.png" alt="アイスコーヒー" class="cafe__menu-img" />
+            </div>
+            <div class="cafe__menu-item">
+              <img src="./images/cafe/cafe_03.png" alt="ソーダ" class="cafe__menu-img" />
+            </div>
+          </div>
+          <div class="cafe__more">
+            <p class="cafe__more-text">More</p>
+          </div>
+          <div class="cafe__marche">
+            <div class="cafe__marche-badge"></div>
+            <div class="cafe__marche-box">
+              <h4 class="cafe__marche-title">NOEUDマルシェ</h4>
+              <p class="cafe__marche-text">NOEUD店内、ウッドデッキで、新鮮な農家直送野菜や手作りマフィンの販売、<br />そしてアート体験などが一度に楽しめるイベントです。<br />NOEUDメニューや出展者同士のコラボ企画も行うこともあります。<br /><br />不定期開催となり、開催情報はNOEUD公式インスタグラムよりお知らせしております。</p>
+              <a href="#" class="cafe__marche-link" aria-label="Instagram">
+                <img src="./images/common/common_instagram_large.png" alt="Instagram" class="cafe__marche-icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rental" id="rental">
+        <div class="rental__inner">
+          <div class="rental__left">
+            <div class="rental__logo">
+              <img src="./images/common/common_logo_brown.png" alt="NOEUD ロゴ" class="rental__logo-img" />
+            </div>
+            <h2 class="rental__title-en">Rental</h2>
+            <h3 class="rental__title-jp">あらゆるニーズに応える多目的スペース</h3>
+            <p class="rental__text">利用料金は１時間８００円〜。<br />ワークショップ、パーティー、セミナーなど、<br />目的に合わせてレイアウト自在。<br />キッズスペースがあるのでお子様連れでも安心して<br />ご利用いただけます。<br /><br />キッチンを利用して間借りカフェ営業も可能です。<br /><br />店内下見も随時受付しておりますのでお気軽に<br />お問い合わせください。</p>
+            <div class="rental__more">
+              <p class="rental__more-text">More</p>
+            </div>
+          </div>
+          <div class="rental__right">
+            <div class="rental__gallery">
+              <div class="rental__gallery-item">
+                <img src="./images/rental/rental_01.png" alt="レンタルスペース全景" class="rental__gallery-img" />
+              </div>
+              <div class="rental__gallery-item">
+                <img src="./images/rental/rental_02.png" alt="レンタルスペース内観" class="rental__gallery-img" />
+              </div>
+              <div class="rental__gallery-item">
+                <img src="./images/rental/rental_03.png" alt="アクセサリー" class="rental__gallery-img" />
+              </div>
+              <div class="rental__gallery-item">
+                <img src="./images/rental/rental_04.png" alt="クリップ" class="rental__gallery-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info" id="info">
+        <div class="info__inner">
+          <div class="info__logo">
+            <img src="./images/common/common_logo_brown.png" alt="NOEUD ロゴ" class="info__logo-img" />
+          </div>
+          <h2 class="info__title-en">Information</h2>
+          <p class="info__text">レンタルをご希望の方は、<br />NOEUD公式インスタグラムのDMから<br />メッセージを送信して下さい。<br /><br />なお、ご利用前に店内下見を<br />おすすめしております。<br />ご都合の良い日程をご確認のうえ<br />お申込みください。</p>
+          <a href="#" class="info__link">
+            <img src="./images/common/common_instagram.png" alt="Instagram" class="info__link-icon" />
+            <span class="info__link-text">ご予約・お問い合わせはこちら</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="access" id="access">
+        <div class="access__inner">
+          <div class="access__box">
+            <div class="access__logo">
+              <img src="./images/common/common_logo_header.png" alt="NOEUD ロゴ" class="access__logo-img" />
+            </div>
+            <div class="access__left">
+              <div class="access__address">
+                <p class="access__address-text">〒060-0007</p>
+                <p class="access__address-text">札幌市中央区北七条西24丁目2-3</p>
+                <p class="access__address-text">011-676-3769</p>
+              </div>
+              <div class="access__hours">
+                <p class="access__hours-item">
+                  <span class="access__hours-label">open</span>
+                  <span class="access__hours-time">11:00-17:00</span>
+                </p>
+                <p class="access__hours-item">
+                  <span class="access__hours-label">closed</span>
+                  <span class="access__hours-time">毎週月曜日・火曜日</span>
+                </p>
+              </div>
+              <a href="#" class="access__map-link">
+                <span class="access__map-text">Google Map</span>
+                <img src="./images/common/common_external_link.png" alt="外部リンク" class="access__map-icon" />
+              </a>
+            </div>
+            <div class="access__map">
+              <img src="./images/access/access_map.png" alt="NOEUD 地図" class="access__map-img" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="footer__copyright">Copyright © NOEUD All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
