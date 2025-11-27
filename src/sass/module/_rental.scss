@@ -11,7 +11,6 @@
 .rental__inner {
   position: relative;
   width: 100%;
-  height: 100%;
 }
 
 .rental__left {
@@ -46,7 +45,7 @@
   line-height: 2;
   margin: 0;
   text-align: center;
-  white-space: pre;
+  white-space: nowrap;
 }
 
 .rental__title-jp {
@@ -60,7 +59,7 @@
   letter-spacing: rem(3.96);
   line-height: 2;
   margin: 0;
-  white-space: pre;
+  white-space: nowrap;
 }
 
 .rental__text {
@@ -72,22 +71,18 @@
   font-weight: var(--regular);
   color: var(--brack);
   letter-spacing: rem(1.92);
-  line-height: 2;
+  line-height: 2.2;
   margin: 0;
   width: rem(450);
-  height: rem(320);
 }
 
 .rental__more {
   position: absolute;
   left: rem(16);
-  top: rem(615);
+  top: rem(559);
 }
 
 .rental__more-text {
-  position: absolute;
-  left: rem(114);
-  top: rem(615);
   font-family: var(--en-font);
   font-size: rem(22);
   font-weight: var(--bold);
@@ -95,15 +90,14 @@
   letter-spacing: rem(2.64);
   line-height: 2;
   margin: 0;
-  text-align: left;
-  white-space: pre;
+  white-space: nowrap;
 }
 
 .rental__more::after {
   content: '';
   position: absolute;
-  left: rem(140);
-  top: rem(661);
+  left: rem(114);
+  top: rem(46);
   width: rem(10);
   height: rem(10);
   background-color: var(--brown);
@@ -173,7 +167,9 @@
 
 @include mq {
   .rental {
-    padding: rem(80) 0;
+    position: static;
+    width: 100%;
+    padding: rem(60) 0;
   }
 
   .rental__inner {
@@ -193,30 +189,33 @@
   }
 
   .rental__title-en {
+    position: static;
     font-size: rem(24);
-    text-align: center;
+    transform: none;
     margin-bottom: rem(20);
   }
 
   .rental__title-jp {
+    position: static;
     font-size: rem(18);
-    text-align: center;
     margin-bottom: rem(20);
   }
 
   .rental__text {
+    position: static;
     font-size: rem(14);
-    text-align: center;
+    width: 100%;
     margin-bottom: rem(20);
   }
 
   .rental__more {
+    position: static;
     text-align: center;
     margin-bottom: rem(40);
   }
 
-  .rental__more-text {
-    font-size: rem(18);
+  .rental__more::after {
+    display: none;
   }
 
   .rental__right {
@@ -260,8 +259,8 @@
   }
 
   .rental__gallery-item:nth-of-type(4) {
-    left: 0;
-    top: 0;
+    display: block;
+    position: static;
     width: 100%;
     height: auto;
   }

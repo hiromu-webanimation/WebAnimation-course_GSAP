@@ -51,7 +51,9 @@
 
 @include mq {
   .fv {
+    position: static;
     height: rem(500);
+    padding: rem(60) 0;
   }
 
   .fv__bg {

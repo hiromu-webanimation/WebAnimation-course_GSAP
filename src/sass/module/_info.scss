@@ -43,7 +43,7 @@
   line-height: 2;
   margin: 0;
   text-align: center;
-  white-space: pre;
+  white-space: nowrap;
 }
 
 .info__text {
@@ -56,11 +56,10 @@
   font-weight: var(--regular);
   color: var(--brack);
   letter-spacing: rem(1.92);
-  line-height: 2;
+  line-height: 2.2;
   margin: 0;
   text-align: center;
   width: rem(450);
-  height: rem(256);
 }
 
 .info__link {
@@ -80,38 +79,52 @@
 }
 
 .info__link-text {
-  position: absolute;
-  left: rem(133);
-  top: rem(485);
   font-family: var(--base-font-family);
   font-size: rem(14);
   font-weight: var(--bold);
   color: var(--brown);
   letter-spacing: rem(1.68);
-  white-space: pre;
+  white-space: nowrap;
 }
 
 @include mq {
   .info {
+    position: static;
+    width: 100%;
+    height: auto;
     padding: rem(60) 0;
   }
 
   .info__inner {
     padding: 0 var(--padding-sp);
-    gap: rem(30);
   }
 
   .info__logo {
+    position: static;
     width: rem(120);
     height: rem(120);
+    margin: 0 auto rem(20);
+    transform: none;
   }
 
   .info__title-en {
+    position: static;
     font-size: rem(24);
+    transform: none;
+    margin-bottom: rem(20);
   }
 
   .info__text {
+    position: static;
     font-size: rem(14);
-    max-width: 100%;
+    transform: none;
+    width: 100%;
+    margin-bottom: rem(40);
+  }
+
+  .info__link {
+    position: static;
+    justify-content: center;
+    margin: 0 auto;
   }
 }

@@ -1,14 +1,15 @@
 @use 'global' as *;
 
 .footer {
-  padding: rem(40) 0;
+  position: absolute;
+  left: rem(626);
+  top: rem(7415);
+  width: rem(376);
   background-color: var(--white);
 }
 
 .footer__inner {
-  max-width: rem(1440);
-  margin: 0 auto;
-  padding: 0 var(--padding-pc);
+  width: 100%;
   text-align: center;
 }
 
@@ -19,10 +20,13 @@
   color: var(--brack);
   letter-spacing: rem(1.92);
   margin: 0;
+  white-space: nowrap;
 }
 
 @include mq {
   .footer {
+    position: static;
+    width: 100%;
     padding: rem(30) 0;
   }
 
@@ -34,4 +38,3 @@
     font-size: rem(14);
   }
 }
-

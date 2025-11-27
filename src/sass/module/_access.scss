@@ -5,6 +5,7 @@
   left: rem(221);
   top: rem(6758);
   width: rem(997);
+  height: rem(477);
   background-color: var(--white);
 }
 
@@ -18,7 +19,6 @@
   position: relative;
   width: rem(997);
   height: rem(477);
-  padding: 0;
   background-color: var(--milktea);
 }
 
@@ -51,9 +51,6 @@
   position: absolute;
   left: rem(15);
   top: rem(88);
-  display: flex;
-  flex-direction: column;
-  gap: 0;
 }
 
 .access__address-text {
@@ -63,7 +60,11 @@
   color: var(--brack);
   letter-spacing: rem(1.92);
   line-height: 2;
-  margin: 0;
+  margin: 0 0 rem(12);
+}
+
+.access__address-text:last-child {
+  margin-bottom: 0;
 }
 
 .access__hours {
@@ -73,40 +74,32 @@
 }
 
 .access__hours-item {
-  position: absolute;
-  left: 0;
+  margin: 0 0 rem(12);
 }
 
-.access__hours-item:nth-of-type(1) {
-  top: rem(236.06);
-}
-
-.access__hours-item:nth-of-type(2) {
-  top: rem(275.76);
+.access__hours-item:last-child {
+  margin-bottom: 0;
 }
 
 .access__hours-label {
-  position: absolute;
-  left: rem(15);
   font-family: var(--base-font-family);
   font-size: rem(16);
   font-weight: var(--regular);
   color: var(--brack);
   letter-spacing: rem(1.92);
   line-height: 2;
-  white-space: pre;
+  margin-right: rem(78);
+  white-space: nowrap;
 }
 
 .access__hours-time {
-  position: absolute;
-  left: rem(93);
   font-family: var(--base-font-family);
   font-size: rem(16);
   font-weight: var(--regular);
   color: var(--brack);
   letter-spacing: rem(1.92);
   line-height: 2;
-  white-space: pre;
+  white-space: nowrap;
 }
 
 .access__map-link {
@@ -120,22 +113,16 @@
 }
 
 .access__map-text {
-  position: absolute;
-  left: rem(15);
-  top: rem(321.34);
   font-family: var(--base-font-family);
   font-size: rem(16);
   font-weight: var(--regular);
   color: var(--brack);
   letter-spacing: rem(1.92);
   line-height: 2;
-  white-space: pre;
+  white-space: nowrap;
 }
 
 .access__map-icon {
-  position: absolute;
-  left: rem(142);
-  top: rem(325.78);
   width: rem(24);
   height: rem(26.683);
   object-fit: contain;
@@ -161,6 +148,9 @@
 
 @include mq {
   .access {
+    position: static;
+    width: 100%;
+    height: auto;
     padding: rem(60) 0;
   }
 
@@ -169,26 +159,52 @@
   }
 
   .access__box {
-    grid-template-columns: 1fr;
-    gap: rem(30);
+    width: 100%;
+    height: auto;
     padding: rem(30) rem(20);
   }
 
   .access__logo {
     position: static;
-    margin: 0 auto rem(20);
     width: rem(150);
     height: rem(150);
+    margin: 0 auto rem(20);
     mask: none;
   }
 
   .access__left {
-    gap: rem(20);
+    position: static;
+    width: 100%;
+    margin-bottom: rem(40);
+  }
+
+  .access__address {
+    position: static;
+    margin-bottom: rem(20);
+  }
+
+  .access__hours {
+    position: static;
+    margin-bottom: rem(20);
+  }
+
+  .access__hours-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .access__map-link {
+    position: static;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .access__map {
-    mask: none;
+    position: static;
+    width: 100%;
     height: auto;
+    margin-top: rem(20);
+    mask: none;
   }
 
   .access__map-img {
