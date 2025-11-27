@@ -30,27 +30,6 @@
   <body>
     <header class="header">
       <div class="header__inner">
-        <div class="header__left">
-          <div class="header__logo">
-            <img src="./images/common/common_logo_white.png" alt="NOEUD ロゴ" class="header__logo-img" />
-          </div>
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-item">
-                <a href="#concept" class="header__nav-link">Concept</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="#cafe" class="header__nav-link">Cafe</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="#rental" class="header__nav-link">Rentalspace</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="#access" class="header__nav-link">Access</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
         <div class="header__right">
           <p class="header__subtitle">カフェ＆レンタルスペース NOEUD</p>
           <div class="header__sns">
@@ -69,49 +48,65 @@
     </header>
 
     <main>
-      <!-- fv -->
-
-      <section class="fv" id="fv">
-        <div class="fv__bg">
-          <img src="./images/fv/fv_bg.png" alt="NOEUD メインビジュアル" class="fv__bg-img" />
-        </div>
-        <div class="fv__content">
-          <h1 class="fv__title">
-            <span class="fv__title-line">Your Space,</span>
-            <span class="fv__title-line"> Your Pace</span>
-          </h1>
-        </div>
-      </section>
-
-      <section class="concept" id="concept">
-        <div class="concept__inner">
-          <div class="concept__left">
-            <div class="concept__gallery">
-              <div class="concept__gallery-item">
-                <img src="./images/concept/concept_01.png" alt="アフォガート" class="concept__gallery-img" />
-              </div>
-              <div class="concept__gallery-item">
-                <img src="./images/concept/concept_02.png" alt="カフェラテ" class="concept__gallery-img" />
-              </div>
-              <div class="concept__gallery-item">
-                <img src="./images/concept/concept_03.png" alt="レモンソーダ" class="concept__gallery-img" />
-              </div>
+      <div class="bg">
+        <!-- fv -->
+        <section class="fv" id="fv">
+          <nav class="fv__nav">
+            <a href="#" class="fv__logo">
+              <img src="./images/common/common_logo_white.png" alt="NOEUD" class="fv__logo-img" />
+            </a>
+            <div class="fv__nav-items">
+              <a href="#concept" class="fv__nav-item">Concept</a>
+              <a href="#cafe" class="fv__nav-item">Cafe</a>
+              <a href="#rental" class="fv__nav-item">Rentalspace</a>
+              <a href="#access" class="fv__nav-item">Access</a>
+            </div>
+          </nav>
+          <div class="fv__bg-wrap">
+            <div class="fv__bg">
+              <img src="./images/fv/fv_bg.jpg" alt="NOEUD メインビジュアル" class="fv__bg-img" />
+            </div>
+            <div class="fv__content">
+              <h1 class="fv__title">
+                <span class="fv__title-line">Your Space,</span>
+                <span class="fv__title-line"> Your Pace</span>
+              </h1>
             </div>
           </div>
-          <div class="concept__right">
-            <div class="concept__logo">
-              <img src="./images/common/common_logo_brown.png" alt="NOEUD ロゴ" class="concept__logo-img" />
+        </section>
+
+        <!-- concept -->
+        <section class="concept" id="concept">
+          <div class="concept__inner">
+            <div class="concept__left">
+              <div class="concept__gallery">
+                <div class="concept__gallery-item">
+                  <img src="./images/concept/concept_01.png" alt="アフォガート" class="concept__gallery-img" />
+                </div>
+                <div class="concept__gallery-item">
+                  <img src="./images/concept/concept_02.png" alt="カフェラテ" class="concept__gallery-img" />
+                </div>
+                <div class="concept__gallery-item">
+                  <img src="./images/concept/concept_03.png" alt="レモンソーダ" class="concept__gallery-img" />
+                </div>
+              </div>
             </div>
-            <h2 class="concept__title-en">Concept</h2>
-            <h3 class="concept__title-jp">カフェでほっと一息、<br />多目的スペースで<br />毎日をもっと豊かに</h3>
-            <p class="concept__text">ソフトクリームとコーヒーが人気のカフェスペースと ワークショップなどに使えるレンタルスペースを<br />併設しています。</p>
-            <p class="concept__text">"NOEUD"はフランス語で"結び目"を意味しており<br />人と人との繋がりが生まれる場所になりますように。<br />という願いが込められています。</p>
+            <div class="concept__right">
+              <div class="concept__logo">
+                <img src="./images/common/common_logo_brown.png" alt="NOEUD ロゴ" class="concept__logo-img" />
+              </div>
+              <h2 class="concept__title-en">Concept</h2>
+              <h3 class="concept__title-jp">カフェでほっと一息、<br />多目的スペースで<br />毎日をもっと豊かに</h3>
+              <p class="concept__text">ソフトクリームとコーヒーが人気のカフェスペースと ワークショップなどに使えるレンタルスペースを<br />併設しています。</p>
+              <p class="concept__text">"NOEUD"はフランス語で"結び目"を意味しており<br />人と人との繋がりが生まれる場所になりますように。<br />という願いが込められています。</p>
+            </div>
           </div>
-          <div class="concept__wood">
-            <img src="./images/concept/concept_wood.png" alt="ウッドデッキ" class="concept__wood-img" />
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
+      <div class="wood-img">
+        <img src="./images/concept/wood.jpg" alt="ウッドデッキ" />
+      </div>
 
       <section class="cafe" id="cafe">
         <div class="cafe__inner">

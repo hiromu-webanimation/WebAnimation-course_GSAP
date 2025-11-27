@@ -1,7 +1,13 @@
 @use 'global' as *;
 
-main {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
+.bg {
+  background-color: var(--base);
+  padding: rem(90) 0 rem(160);
 }
+
+.wood-img {
+  width: rem(1000);
+  aspect-ratio: 1000/475;
+  margin-inline: auto;
+}
+
