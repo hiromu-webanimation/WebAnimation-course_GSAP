@@ -1,7 +1,10 @@
 @use 'global' as *;
 
 .fv {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: rem(90);
+  width: 100%;
   height: rem(994);
   background-color: var(--base);
   overflow: hidden;
@@ -10,7 +13,7 @@
 .fv__bg {
   position: absolute;
   left: rem(-18);
-  top: rem(90);
+  top: 0;
   width: rem(1558);
   height: rem(994);
   mask-image: url('../images/fv/fv_mask.svg');
@@ -27,8 +30,8 @@
 
 .fv__content {
   position: absolute;
-  left: rem(57);
-  top: rem(353);
+  left: rem(417);
+  top: rem(263);
   z-index: 1;
 }
 
@@ -40,6 +43,10 @@
   line-height: 1.7;
   margin: 0;
   white-space: pre;
+}
+
+.fv__title-line {
+  display: block;
 }
 
 @include mq {

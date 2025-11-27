@@ -1,9 +1,11 @@
 @use 'global' as *;
 
 .cafe {
-  padding: rem(200) 0;
+  position: absolute;
+  left: rem(22);
+  top: rem(2723);
+  width: rem(1396);
   background-color: var(--white);
-  position: relative;
 }
 
 .cafe::before {
@@ -20,27 +22,21 @@
 }
 
 .cafe__inner {
-  max-width: rem(1440);
-  margin: 0 auto;
-  padding: 0 var(--padding-pc);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: rem(40);
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .cafe__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: rem(20);
-  text-align: center;
+  position: relative;
 }
 
 .cafe__logo {
+  position: absolute;
+  left: rem(635);
+  top: rem(216);
   width: rem(185);
   height: rem(185);
-  flex-shrink: 0;
 }
 
 .cafe__logo-img {
@@ -50,6 +46,9 @@
 }
 
 .cafe__title-en {
+  position: absolute;
+  left: rem(676);
+  top: rem(287);
   font-family: var(--en-font);
   font-size: rem(28);
   font-weight: var(--bold);
@@ -57,9 +56,14 @@
   letter-spacing: rem(14);
   line-height: 2;
   margin: 0;
+  text-align: center;
+  white-space: pre;
 }
 
 .cafe__title-jp {
+  position: absolute;
+  left: rem(457);
+  top: rem(389);
   font-family: var(--base-font-family);
   font-size: rem(22);
   font-weight: var(--bold);
@@ -67,9 +71,14 @@
   letter-spacing: rem(3.96);
   line-height: 2;
   margin: 0;
+  text-align: left;
+  width: rem(541);
 }
 
 .cafe__text {
+  position: absolute;
+  left: rem(499);
+  top: rem(457);
   font-family: var(--base-font-family);
   font-size: rem(16);
   font-weight: var(--regular);
@@ -77,36 +86,49 @@
   letter-spacing: rem(1.92);
   line-height: 2;
   margin: 0;
-  text-align: center;
-  max-width: rem(450);
+  text-align: left;
+  width: rem(450);
+  height: rem(352);
 }
 
 .cafe__menu {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: rem(20);
-  width: 100%;
-  max-width: rem(1396);
+  position: absolute;
+  left: 0;
+  top: rem(673);
+  width: rem(1396);
+  height: rem(289);
 }
 
 .cafe__menu-item {
-  width: 100%;
+  position: absolute;
+  width: rem(432);
   height: rem(289);
   mask-image: url('../images/cafe/cafe_01_mask.svg');
   mask-size: rem(432) rem(289);
   mask-repeat: no-repeat;
-  mask-position: center;
 }
 
 .cafe__menu-item:nth-of-type(1) {
+  left: 0;
+  top: 0;
+  width: rem(472);
+  height: rem(316);
   mask-position: rem(20) rem(27);
 }
 
 .cafe__menu-item:nth-of-type(2) {
+  left: rem(482);
+  top: 0;
+  width: rem(487);
+  height: rem(324);
   mask-position: rem(28) 0;
 }
 
 .cafe__menu-item:nth-of-type(3) {
+  left: rem(964);
+  top: 0;
+  width: rem(459);
+  height: rem(306);
   mask-position: rem(14) 0;
 }
 
@@ -117,7 +139,9 @@
 }
 
 .cafe__more {
-  text-align: center;
+  position: absolute;
+  left: rem(1310);
+  top: rem(1022);
 }
 
 .cafe__more-text {
@@ -128,20 +152,33 @@
   letter-spacing: rem(2.64);
   line-height: 2;
   margin: 0;
+  text-align: center;
+  white-space: pre;
+}
+
+.cafe__more::after {
+  content: '';
+  position: absolute;
+  left: rem(1336);
+  top: rem(1061);
+  width: rem(10);
+  height: rem(10);
+  background-color: var(--brown);
+  border-radius: 50%;
 }
 
 .cafe__marche {
-  position: relative;
-  width: 100%;
-  max-width: rem(888);
-  margin-top: rem(40);
+  position: absolute;
+  left: rem(254);
+  top: rem(1382);
+  width: rem(888);
+  height: rem(346);
 }
 
 .cafe__marche-badge {
   position: absolute;
-  left: 50%;
+  left: rem(339);
   top: 0;
-  transform: translateX(-50%);
   width: rem(210);
   height: rem(32);
   background-color: var(--brown);
@@ -161,7 +198,9 @@
 }
 
 .cafe__marche-box {
-  margin-top: rem(24);
+  position: absolute;
+  left: 0;
+  top: rem(24);
   padding: rem(55.5) rem(80);
   background-color: var(--milktea);
   border: 1px solid var(--brown);
@@ -169,6 +208,8 @@
   flex-direction: column;
   align-items: center;
   gap: rem(40);
+  width: rem(888);
+  height: rem(322);
 }
 
 .cafe__marche-title {
@@ -195,6 +236,9 @@
 }
 
 .cafe__marche-link {
+  position: absolute;
+  left: rem(842);
+  top: rem(234);
   width: rem(88);
   height: rem(88);
   display: flex;
