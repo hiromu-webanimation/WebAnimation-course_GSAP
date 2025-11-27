@@ -39,7 +39,7 @@
   font-size: rem(28);
   font-weight: var(--bold);
   color: var(--brown);
-  letter-spacing: rem(14);
+  letter-spacing: 0.5em;
   line-height: 2;
   margin: 0;
   text-align: center;
@@ -55,7 +55,7 @@
   font-size: rem(16);
   font-weight: var(--regular);
   color: var(--brack);
-  letter-spacing: rem(1.92);
+  letter-spacing: 0.12em;
   line-height: 2.2;
   margin: 0;
   text-align: center;
@@ -83,7 +83,7 @@
   font-size: rem(14);
   font-weight: var(--bold);
   color: var(--brown);
-  letter-spacing: rem(1.68);
+  letter-spacing: 0.12em;
   white-space: nowrap;
 }
 

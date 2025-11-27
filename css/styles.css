@@ -249,8 +249,7 @@ html {
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
-  letter-spacing: 1.92px;
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.12em;
   line-height: 2;
   margin: 0 0 12px;
   margin: 0 0 0.75rem;
@@ -283,8 +282,7 @@ html {
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
-  letter-spacing: 1.92px;
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.12em;
   line-height: 2;
   margin-right: 78px;
   margin-right: 4.875rem;
@@ -297,8 +295,7 @@ html {
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
-  letter-spacing: 1.92px;
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.12em;
   line-height: 2;
   white-space: nowrap;
 }
@@ -326,8 +323,7 @@ html {
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
-  letter-spacing: 1.92px;
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.12em;
   line-height: 2;
   white-space: nowrap;
 }
@@ -478,13 +474,12 @@ html {
   top: 4.4375rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 28px;
   font-size: 1.75rem;
   font-weight: 700;
   color: #a07b35;
-  letter-spacing: 14px;
-  letter-spacing: 0.875rem;
+  letter-spacing: 0.5em;
   line-height: 2;
   margin: 0;
   text-align: center;
@@ -504,8 +499,7 @@ html {
   font-size: 1.375rem;
   font-weight: 700;
   color: #333333;
-  letter-spacing: 3.96px;
-  letter-spacing: 0.2475rem;
+  letter-spacing: 0.18em;
   line-height: 2;
   margin: 0;
   text-align: center;
@@ -525,8 +519,7 @@ html {
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
-  letter-spacing: 1.92px;
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.12em;
   line-height: 2.2;
   margin: 0;
   text-align: center;
@@ -620,13 +613,12 @@ html {
 }
 
 .cafe__more-text {
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 22px;
   font-size: 1.375rem;
   font-weight: 700;
   color: #333333;
-  letter-spacing: 2.64px;
-  letter-spacing: 0.165rem;
+  letter-spacing: 0.12em;
   line-height: 2;
   margin: 0;
   text-align: center;
@@ -689,8 +681,7 @@ html {
   font-size: 1rem;
   font-weight: 700;
   color: #f4efe6;
-  letter-spacing: 2.4px;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.15em;
 }
 
 .cafe__marche-box {
@@ -716,8 +707,7 @@ html {
   font-size: 1.5rem;
   font-weight: 700;
   color: #333333;
-  letter-spacing: 12px;
-  letter-spacing: 0.75rem;
+  letter-spacing: 0.5em;
   line-height: 2;
   margin: 0 0 68px;
   margin: 0 0 4.25rem;
@@ -730,8 +720,7 @@ html {
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
-  letter-spacing: 1.92px;
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.12em;
   line-height: 2;
   margin: 0 0 68px;
   margin: 0 0 4.25rem;
@@ -961,7 +950,7 @@ html {
   margin-top: -3.125rem;
   margin-bottom: 40px;
   margin-bottom: 2.5rem;
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 28px;
   font-size: 1.75rem;
   font-weight: 700;
@@ -1022,8 +1011,7 @@ html {
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
-  letter-spacing: 1.92px;
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.12em;
   margin: 0;
   white-space: nowrap;
 }
@@ -1128,7 +1116,7 @@ html {
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 700;
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   color: #a07b35;
   letter-spacing: 0.12em;
 }
@@ -1208,13 +1196,12 @@ html {
 }
 
 .header__nav-link {
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 700;
   color: #a07b35;
-  letter-spacing: 1.68px;
-  letter-spacing: 0.105rem;
+  letter-spacing: 0.12em;
   text-decoration: none;
   white-space: nowrap;
   -webkit-transition: opacity 0.3s ease;
@@ -1246,8 +1233,7 @@ html {
   font-size: 0.875rem;
   font-weight: 700;
   color: #a07b35;
-  letter-spacing: 2.66px;
-  letter-spacing: 0.16625rem;
+  letter-spacing: 0.19em;
   white-space: nowrap;
   margin: 0;
 }
@@ -1376,13 +1362,12 @@ html {
   top: 4.4375rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 28px;
   font-size: 1.75rem;
   font-weight: 700;
   color: #a07b35;
-  letter-spacing: 14px;
-  letter-spacing: 0.875rem;
+  letter-spacing: 0.5em;
   line-height: 2;
   margin: 0;
   text-align: center;
@@ -1402,8 +1387,7 @@ html {
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
-  letter-spacing: 1.92px;
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.12em;
   line-height: 2.2;
   margin: 0;
   text-align: center;
@@ -1443,8 +1427,7 @@ html {
   font-size: 0.875rem;
   font-weight: 700;
   color: #a07b35;
-  letter-spacing: 1.68px;
-  letter-spacing: 0.105rem;
+  letter-spacing: 0.12em;
   white-space: nowrap;
 }
 
@@ -1550,13 +1533,12 @@ html {
   top: 4.0625rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 28px;
   font-size: 1.75rem;
   font-weight: 700;
   color: #a07b35;
-  letter-spacing: 14px;
-  letter-spacing: 0.875rem;
+  letter-spacing: 0.5em;
   line-height: 2;
   margin: 0;
   text-align: center;
@@ -1574,8 +1556,7 @@ html {
   font-size: 1.375rem;
   font-weight: 700;
   color: #333333;
-  letter-spacing: 3.96px;
-  letter-spacing: 0.2475rem;
+  letter-spacing: 0.18em;
   line-height: 2;
   margin: 0;
   white-space: nowrap;
@@ -1592,8 +1573,7 @@ html {
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
-  letter-spacing: 1.92px;
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.12em;
   line-height: 2.2;
   margin: 0;
   width: 450px;
@@ -1609,13 +1589,12 @@ html {
 }
 
 .rental__more-text {
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 22px;
   font-size: 1.375rem;
   font-weight: 700;
   color: #333333;
-  letter-spacing: 2.64px;
-  letter-spacing: 0.165rem;
+  letter-spacing: 0.12em;
   line-height: 2;
   margin: 0;
   white-space: nowrap;
