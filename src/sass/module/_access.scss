@@ -1,11 +1,6 @@
 @use 'global' as *;
 
 .access {
-  position: absolute;
-  left: rem(221);
-  top: rem(6758);
-  width: rem(997);
-  height: rem(477);
   background-color: var(--white);
 }
 
@@ -23,9 +18,6 @@
 }
 
 .access__logo {
-  position: absolute;
-  left: rem(15);
-  top: rem(-66.33);
   width: rem(209.717);
   height: rem(222.402);
   mask-image: url('../images/common/common_logo_header.svg');
@@ -41,16 +33,10 @@
 }
 
 .access__left {
-  position: absolute;
-  left: rem(60);
-  top: rem(61.789);
   width: rem(259);
 }
 
 .access__address {
-  position: absolute;
-  left: rem(15);
-  top: rem(88);
 }
 
 .access__address-text {
