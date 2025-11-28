@@ -1,22 +1,16 @@
 @use 'global' as *;
 
 .rental {
-  position: absolute;
-  left: rem(98);
-  top: rem(5326);
-  width: rem(1342);
-  background-color: var(--white);
+  margin-bottom: rem(200);
 }
 
 .rental__inner {
-  position: relative;
-  width: 100%;
+  max-width: rem(938);
+  padding: 0 var(--padding-pc);
+  margin-inline: auto;
 }
 
 .rental__left {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: rem(501);
 }
 
@@ -33,10 +27,6 @@
 }
 
 .rental__title-en {
-  position: absolute;
-  left: rem(93);
-  top: rem(65);
-  transform: translateX(-50%);
   font-family: var(--en-font);
   font-size: rem(28);
   font-weight: var(--bold);

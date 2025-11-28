@@ -8,12 +8,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: rem(100);
 }
 
 .concept__left {
   width: 50%;
   flex-grow: 1;
-  gap: rem(100);
 }
 
 .concept__gallery {
@@ -38,14 +38,14 @@
 .concept__gallery-item:nth-of-type(3) {
   width: rem(286);
   aspect-ratio: 286/212;
-  margin-left: vw(1440, 286);
+  margin-left: vw(1440, 98);
 }
 
 .concept__gallery-img {
 }
 
 .concept__right {
-  width: 27%;
+  width: rem(540);
   padding-right: rem(90);
 }
 
@@ -59,7 +59,7 @@
 }
 
 .concept__title-en {
-  margin-top: rem(-50);
+  margin-top: rem(-110);
   margin-bottom: rem(40);
   font-family: var(--en-font);
   font-size: rem(28);
@@ -72,25 +72,21 @@
 }
 
 .concept__title-jp {
+  margin-bottom: rem(40);
   font-family: var(--base-font-family);
   font-size: rem(22);
   font-weight: var(--bold);
   color: var(--brown);
   letter-spacing: 0.18em;
   line-height: 2;
-  margin: 0 0 rem(172);
 }
 
 .concept__text {
+  margin-bottom: rem(40);
   font-family: var(--base-font-family);
   font-size: rem(16);
   font-weight: var(--regular);
   color: var(--brack);
   letter-spacing: 0.12em;
   line-height: 2.2;
-  margin: 0 0 rem(136);
-}
-
-.concept__text:last-of-type {
-  margin-bottom: 0;
 }
