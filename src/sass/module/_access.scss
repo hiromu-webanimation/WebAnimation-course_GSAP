@@ -1,5 +1,14 @@
 @use 'global' as *;
 
+.test {
+  margin-top: rem(100);
+  font-size: rem(100);
+  font-family: 'Futura Std', sans-serif;
+}
+.test2 {
+  font-size: rem(100);
+}
+
 .access {
   background-color: var(--white);
 }

@@ -170,6 +170,19 @@ html {
   word-wrap: break-word;
 }
 
+.test {
+  margin-top: 100px;
+  margin-top: 6.25rem;
+  font-size: 100px;
+  font-size: 6.25rem;
+  font-family: "Futura Std", sans-serif;
+}
+
+.test2 {
+  font-size: 100px;
+  font-size: 6.25rem;
+}
+
 .access {
   background-color: #fff;
 }
