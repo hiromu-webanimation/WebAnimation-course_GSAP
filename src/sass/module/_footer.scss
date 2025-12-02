@@ -1,11 +1,7 @@
 @use 'global' as *;
 
 .footer {
-  position: absolute;
-  left: rem(626);
-  top: rem(7415);
-  width: rem(376);
-  background-color: var(--white);
+  padding: rem(60) 0;
 }
 
 .footer__inner {
@@ -32,6 +28,12 @@
 
   .footer__inner {
     padding: 0 var(--padding-sp);
+  }
+
+  .footer__logo {
+    width: rem(150);
+    height: rem(150);
+    margin-bottom: rem(20);
   }
 
   .footer__copyright {

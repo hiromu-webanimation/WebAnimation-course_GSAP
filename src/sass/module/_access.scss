@@ -1,61 +1,49 @@
 @use 'global' as *;
 
-.test {
-  margin-top: rem(100);
-  font-size: rem(100);
-  font-family: 'Futura Std', sans-serif;
-}
-.test2 {
-  font-size: rem(100);
-}
-
 .access {
   background-color: var(--white);
+  margin-bottom: rem(180);
 }
 
 .access__inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  max-width: rem(1047);
+  padding: 0 var(--padding-pc);
+  margin-inline: auto;
 }
 
 .access__box {
   position: relative;
-  width: rem(997);
-  height: rem(477);
   background-color: var(--milktea);
+  padding: rem(60);
+  display: flex;
+  gap: rem(30);
 }
 
 .access__logo {
-  width: rem(209.717);
-  height: rem(222.402);
-  mask-image: url('../images/common/common_logo_header.svg');
-  mask-size: rem(195) rem(66.331);
-  mask-position: rem(7.358) rem(66.33);
-  mask-repeat: no-repeat;
+  margin-bottom: rem(20);
+  aspect-ratio: 195/66;
+  width: rem(195);
 }
 
 .access__logo-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .access__left {
-  width: rem(259);
+  width: rem(290);
 }
 
 .access__address {
+  margin-bottom: rem(20);
 }
 
 .access__address-text {
+  margin-bottom: rem(12);
   font-family: var(--base-font-family);
   font-size: rem(16);
   font-weight: var(--regular);
   color: var(--brack);
   letter-spacing: 0.12em;
   line-height: 2;
-  margin: 0 0 rem(12);
 }
 
 .access__address-text:last-child {
@@ -63,13 +51,14 @@
 }
 
 .access__hours {
-  position: absolute;
-  left: rem(15);
-  top: rem(236.06);
+  margin-bottom: rem(20);
 }
 
 .access__hours-item {
-  margin: 0 0 rem(12);
+  margin-bottom: rem(12);
+  display: flex;
+  gap: rem(32);
+  align-items: center;
 }
 
 .access__hours-item:last-child {
@@ -83,8 +72,6 @@
   color: var(--brack);
   letter-spacing: 0.12em;
   line-height: 2;
-  margin-right: rem(78);
-  white-space: nowrap;
 }
 
 .access__hours-time {
@@ -94,17 +81,12 @@
   color: var(--brack);
   letter-spacing: 0.12em;
   line-height: 2;
-  white-space: nowrap;
 }
 
 .access__map-link {
-  position: absolute;
-  left: rem(15);
-  top: rem(321.34);
   display: flex;
   align-items: center;
   gap: rem(8);
-  text-decoration: none;
 }
 
 .access__map-text {
@@ -114,95 +96,15 @@
   color: var(--brack);
   letter-spacing: 0.12em;
   line-height: 2;
-  white-space: nowrap;
 }
 
 .access__map-icon {
   width: rem(24);
-  height: rem(26.683);
+  aspect-ratio: 1;
   object-fit: contain;
 }
 
 .access__map {
-  position: absolute;
-  left: rem(307);
-  top: rem(-22.55);
-  width: rem(555);
-  height: rem(370);
-  mask-image: url('../images/access/access_mask.svg');
-  mask-size: rem(548) rem(342.435);
-  mask-position: rem(7) rem(28);
-  mask-repeat: no-repeat;
-}
-
-.access__map-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@include mq {
-  .access {
-    position: static;
-    width: 100%;
-    height: auto;
-    padding: rem(60) 0;
-  }
-
-  .access__inner {
-    padding: 0 var(--padding-sp);
-  }
-
-  .access__box {
-    width: 100%;
-    height: auto;
-    padding: rem(30) rem(20);
-  }
-
-  .access__logo {
-    position: static;
-    width: rem(150);
-    height: rem(150);
-    margin: 0 auto rem(20);
-    mask: none;
-  }
-
-  .access__left {
-    position: static;
-    width: 100%;
-    margin-bottom: rem(40);
-  }
-
-  .access__address {
-    position: static;
-    margin-bottom: rem(20);
-  }
-
-  .access__hours {
-    position: static;
-    margin-bottom: rem(20);
-  }
-
-  .access__hours-item {
-    display: flex;
-    align-items: center;
-  }
-
-  .access__map-link {
-    position: static;
-    justify-content: center;
-    margin: 0 auto;
-  }
-
-  .access__map {
-    position: static;
-    width: 100%;
-    height: auto;
-    margin-top: rem(20);
-    mask: none;
-  }
-
-  .access__map-img {
-    height: auto;
-  }
+  width: 50%;
+  flex-grow: 1;
 }

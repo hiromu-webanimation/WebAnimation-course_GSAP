@@ -1,138 +1,97 @@
 @use 'global' as *;
 
-.rental {
+.rental-img {
+  aspect-ratio: 1000/475;
+  max-width: rem(1000);
+  margin-inline: auto;
   margin-bottom: rem(200);
 }
 
+.rental {
+  margin-bottom: rem(40);
+}
+
 .rental__inner {
-  max-width: rem(938);
-  padding: 0 var(--padding-pc);
-  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(88);
 }
 
 .rental__left {
-  width: rem(501);
+  width: rem(600);
+  padding-left: rem(98);
 }
 
 .rental__logo {
   width: rem(185);
-  height: rem(185);
-  margin-bottom: rem(65);
+  aspect-ratio: 1;
 }
 
 .rental__logo-img {
-  width: 100%;
-  height: 100%;
   object-fit: contain;
 }
 
 .rental__title-en {
+  margin-top: rem(-120);
+  margin-bottom: rem(45);
   font-family: var(--en-font);
   font-size: rem(28);
   font-weight: var(--bold);
   color: var(--brown);
   letter-spacing: 0.5em;
   line-height: 2;
-  margin: 0;
-  text-align: center;
-  white-space: nowrap;
 }
 
 .rental__title-jp {
+  margin-bottom: rem(28);
   font-family: var(--base-font-family);
   font-size: rem(22);
   font-weight: var(--bold);
   color: var(--brack);
   letter-spacing: 0.18em;
   line-height: 2;
-  margin: 0;
-  white-space: nowrap;
 }
 
 .rental__text {
+  margin-bottom: rem(55);
   font-family: var(--base-font-family);
   font-size: rem(16);
   font-weight: var(--regular);
   color: var(--brack);
   letter-spacing: 0.12em;
   line-height: 2.2;
-  margin: 0;
-  width: rem(450);
 }
 
 .rental__more {
 }
 
-.rental__more-text {
-  font-family: var(--en-font);
-  font-size: rem(22);
-  font-weight: var(--bold);
-  color: var(--brack);
-  letter-spacing: 0.12em;
-  line-height: 2;
-  margin: 0;
-  white-space: nowrap;
-}
-
-.rental__more::after {
-  content: '';
-  position: absolute;
-  left: rem(114);
-  top: rem(46);
-  width: rem(10);
-  height: rem(10);
-  background-color: var(--brown);
-  border-radius: 50%;
-}
-
 .rental__right {
-}
-
-.rental__gallery {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  flex-grow: 1;
+  width: 50%;
 }
 
 .rental__gallery-item {
-  position: absolute;
 }
 
 .rental__gallery-item:nth-of-type(1) {
-  left: rem(-55);
-  top: rem(-6.01);
-  width: rem(291);
-  height: rem(193.307);
-  mask-image: url('../images/rental/rental_01_mask.svg');
-  mask-size: rem(182) rem(181.288);
-  mask-position: rem(55) rem(6.01);
-  mask-repeat: no-repeat;
+  aspect-ratio: 182/181;
+  width: vw(1440, 182);
 }
 
 .rental__gallery-item:nth-of-type(2) {
-  left: rem(137);
-  top: rem(277.44);
-  width: rem(616);
-  height: rem(411.653);
-  mask-image: url('../images/rental/rental_02_mask.svg');
-  mask-size: rem(527) rem(352.56);
-  mask-position: rem(44) rem(59.094);
-  mask-repeat: no-repeat;
+  aspect-ratio: 262/186;
+  width: vw(1440, 262);
+  margin-bottom: rem(57);
+  margin-left: auto;
+  margin-top: rem(-150);
 }
 
 .rental__gallery-item:nth-of-type(3) {
-  left: rem(491);
-  top: rem(34.05);
-  width: rem(331);
-  height: rem(221.351);
-  mask-image: url('../images/rental/rental_03_mask.svg');
-  mask-size: rem(262) rem(186.296);
-  mask-position: rem(49) rem(18.029);
-  mask-repeat: no-repeat;
-}
-
-.rental__gallery-item:nth-of-type(4) {
-  display: none;
+  aspect-ratio: 527/352;
+  width: vw(1440, 527);
+  margin-left: auto;
+  margin-right: vw(1440, 90);
 }
 
 .rental__gallery-img {
@@ -140,5 +99,3 @@
   height: 100%;
   object-fit: cover;
 }
-
-

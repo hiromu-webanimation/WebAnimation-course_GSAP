@@ -1,0 +1,25 @@
+@use 'global' as *;
+.more {
+  width: fit-content;
+  display: block;
+  font-family: var(--en-font);
+  font-size: rem(22);
+  font-weight: var(--bold);
+  color: var(--brack);
+  letter-spacing: rem(2.64);
+  line-height: 2;
+  position: relative;
+  padding-bottom: rem(3);
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    bottom: 0;
+    aspect-ratio: 1;
+    width: rem(10);
+    border-radius: 50%;
+    background-color: var(--brown);
+  }
+}
