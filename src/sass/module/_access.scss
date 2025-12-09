@@ -25,9 +25,6 @@
   width: rem(195);
 }
 
-.access__logo-img {
-}
-
 .access__left {
   width: rem(290);
 }
@@ -87,6 +84,8 @@
   display: flex;
   align-items: center;
   gap: rem(8);
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .access__map-text {
@@ -96,12 +95,26 @@
   color: var(--brack);
   letter-spacing: 0.12em;
   line-height: 2;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .access__map-icon {
   width: rem(24);
   aspect-ratio: 1;
   object-fit: contain;
+  transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (any-hover: hover) {
+  .access__map-link:hover {
+    .access__map-text {
+      color: var(--brown);
+    }
+
+    .access__map-icon {
+      filter: brightness(0) saturate(100%) invert(45%) sepia(30%) saturate(1000%) hue-rotate(15deg) brightness(0.6) contrast(1.2);
+    }
+  }
 }
 
 .access__map {

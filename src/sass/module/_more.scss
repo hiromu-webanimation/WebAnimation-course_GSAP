@@ -10,6 +10,9 @@
   line-height: 2;
   position: relative;
   padding-bottom: rem(3);
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  
   &::after {
     content: '';
     display: block;
@@ -21,5 +24,18 @@
     width: rem(10);
     border-radius: 50%;
     background-color: var(--brown);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media (any-hover: hover) {
+  .more:hover {
+    color: var(--brown);
+    transform: translateY(rem(-2));
+    
+    &::after {
+      width: rem(14);
+      background-color: var(--brack);
+    }
   }
 }

@@ -54,6 +54,7 @@
   margin-bottom: rem(52);
   display: block;
   aspect-ratio: 165/150;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fv__logo-img {
@@ -74,4 +75,34 @@
   font-family: var(--en-font);
   color: var(--brown);
   letter-spacing: 0.12em;
+  text-decoration: none;
+  display: block;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: rem(2);
+    background-color: var(--brown);
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media (any-hover: hover) {
+  .fv__logo:hover {
+    opacity: 0.7;
+  }
+
+  .fv__nav-item:hover {
+    color: var(--brack);
+    transform: translateX(rem(5));
+
+    &::after {
+      width: 100%;
+    }
+  }
 }
