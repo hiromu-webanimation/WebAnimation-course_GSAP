@@ -9,16 +9,18 @@
   gap: rem(105);
   padding-left: rem(107);
   position: relative;
+  overflow: hidden;
 }
 
 .fv__bg-wrap {
   position: relative;
+  width: 50%;
+  flex-grow: 1;
 }
 
 .fv__bg {
-  aspect-ratio: 1062/990;
   height: 100vh;
-  min-height: rem(990);
+  min-height: rem(800);
   max-height: rem(1100);
 }
 

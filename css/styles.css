@@ -558,17 +558,21 @@ html {
   padding-left: 107px;
   padding-left: 6.6875rem;
   position: relative;
+  overflow: hidden;
 }
 
 .fv__bg-wrap {
   position: relative;
+  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .fv__bg {
-  aspect-ratio: 1062/990;
   height: 100vh;
-  min-height: 990px;
-  min-height: 61.875rem;
+  min-height: 800px;
+  min-height: 50rem;
   max-height: 1100px;
   max-height: 68.75rem;
 }
