@@ -65,7 +65,7 @@
   border: 1px solid var(--brown);
   border-radius: 50%;
   text-decoration: none;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .marche__icon {
@@ -76,17 +76,15 @@
 .cafe__marche-icon {
   width: rem(24);
   object-fit: contain;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (any-hover: hover) {
   .marche__link:hover {
-    transform: scale(1.1);
     background-color: var(--brown);
     border-color: var(--brown);
     
     .cafe__marche-icon {
-      transform: scale(1.15);
       filter: brightness(0) invert(1);
     }
   }

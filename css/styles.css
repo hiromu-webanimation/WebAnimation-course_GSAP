@@ -1003,8 +1003,6 @@ html {
   gap: 10px;
   gap: 0.625rem;
   text-decoration: none;
-  -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info__link-icon {
@@ -1029,10 +1027,6 @@ html {
 }
 
 @media (any-hover: hover) {
-  .info__link:hover {
-    -webkit-transform: translateY(-0.1875rem);
-            transform: translateY(-0.1875rem);
-  }
   .info__link:hover .info__link-text {
     color: #333333;
   }
@@ -1138,8 +1132,8 @@ html {
   border: 1px solid #a07b35;
   border-radius: 50%;
   text-decoration: none;
-  -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .marche__icon {
@@ -1154,22 +1148,18 @@ html {
   width: 1.5rem;
   -o-object-fit: contain;
      object-fit: contain;
-  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (any-hover: hover) {
   .marche__link:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
     background-color: #a07b35;
     border-color: #a07b35;
   }
   .marche__link:hover .cafe__marche-icon {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1" /><feFuncG type="linear" slope="1" /><feFuncB type="linear" slope="1" /></feComponentTransfer><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="1 0" /><feFuncG type="table" tableValues="1 0" /><feFuncB type="table" tableValues="1 0" /></feComponentTransfer></filter></svg>#filter');
     -webkit-filter: brightness(0) invert(1);
             filter: brightness(0) invert(1);
