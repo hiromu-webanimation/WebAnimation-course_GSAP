@@ -1,6 +1,4 @@
 jQuery(function ($) {
-
   // animation
-  
-
+  // parallax
 });
