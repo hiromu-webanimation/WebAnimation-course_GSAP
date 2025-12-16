@@ -15,25 +15,9 @@
   width: 100%;
 }
 
-.cafe__logo {
-  width: rem(185);
-  aspect-ratio: 1;
+.cafe__title {
   margin-inline: auto;
-}
-
-.cafe__logo-img {
-  object-fit: contain;
-}
-
-.cafe__title-en {
-  margin-top: rem(-110);
-  margin-bottom: rem(40);
-  font-family: var(--en-font);
-  font-size: rem(28);
-  font-weight: var(--bold);
-  color: var(--brown);
-  letter-spacing: 0.5em;
-  line-height: 2;
+  width: fit-content;
   text-align: center;
 }
 

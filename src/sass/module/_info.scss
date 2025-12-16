@@ -10,26 +10,9 @@
   margin-inline: auto;
 }
 
-.info__logo {
-  width: rem(185);
-  height: rem(185);
+.info__title {
+  width: fit-content;
   margin-inline: auto;
-}
-
-.info__logo-img {
-  object-fit: contain;
-}
-
-.info__title-en {
-  margin-bottom: rem(45);
-  margin-top: rem(-120);
-  font-family: var(--en-font);
-  font-size: rem(28);
-  font-weight: var(--bold);
-  color: var(--brown);
-  letter-spacing: 0.5em;
-  line-height: 2;
-  text-align: center;
 }
 
 .info__text {

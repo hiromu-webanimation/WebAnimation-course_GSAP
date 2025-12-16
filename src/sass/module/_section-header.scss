@@ -1,0 +1,27 @@
+@use 'global' as *;
+
+.section-header {
+  position: relative;
+  width: fit-content;
+}
+
+.section-header__logo {
+  width: rem(185);
+  margin-inline: auto;
+  aspect-ratio: 1;
+}
+
+.section-header__logo-img {
+  object-fit: contain;
+}
+
+.section-header__title-en {
+  margin-top: rem(-110);
+  margin-bottom: rem(40);
+  font-family: var(--en-font);
+  font-size: rem(28);
+  font-weight: var(--bold);
+  color: var(--brown);
+  letter-spacing: 0.5em;
+  line-height: 2;
+}

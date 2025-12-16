@@ -55,26 +55,11 @@
   padding-right: rem(90);
 }
 
-.concept__logo {
-  width: rem(185);
-  aspect-ratio: 1;
-}
-
-.concept__logo-img {
-  object-fit: contain;
-}
-
-.concept__title-en {
-  margin-top: rem(-110);
-  margin-bottom: rem(40);
-  font-family: var(--en-font);
-  font-size: rem(28);
-  font-weight: var(--bold);
-  color: var(--brown);
-  letter-spacing: 0.5em;
-  line-height: 2;
-  white-space: nowrap;
-  text-align: left;
+.concept__title {
+  .section-header__title-en {
+    text-align: left;
+    white-space: nowrap;
+  }
 }
 
 .concept__title-jp {
