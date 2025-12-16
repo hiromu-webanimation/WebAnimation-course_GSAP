@@ -460,19 +460,23 @@ html {
 }
 
 .concept__gallery-item:nth-of-type(1) {
-  width: 36.25vw;
+  width: 60%;
   aspect-ratio: 522/377;
   margin-right: auto;
 }
 
 .concept__gallery-item:nth-of-type(2) {
-  width: 14.6527777778vw;
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  width: 32%;
   aspect-ratio: 211/202;
   margin-left: auto;
 }
 
 .concept__gallery-item:nth-of-type(3) {
-  width: 19.8611111111vw;
+  width: 40%;
+  margin-top: -200px;
+  margin-top: -12.5rem;
   aspect-ratio: 286/212;
   margin-left: 6.8055555556vw;
 }
