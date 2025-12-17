@@ -17,7 +17,7 @@ jQuery(function ($) {
     gsap.fromTo(
       imgScrubElement,
       {
-        clipPath: 'inset(10% 10% 10% 10% rounded 30px)',
+        clipPath: 'inset(10% 10% 10% 10% round 30px)',
       },
       {
         clipPath: 'inset(0% 0% 0% 0% round 0px)',
@@ -68,6 +68,33 @@ jQuery(function ($) {
         scrollTrigger: {
           trigger: staggerElement,
           start: 'top 90%',
+        },
+      }
+    );
+  });
+
+  // 汎用fadeIn
+  let fadeInElements = document.querySelectorAll('.js-fade-in');
+  fadeInElements.forEach((fadeInElement) => {
+    gsap.fromTo(
+      fadeInElement,
+      {
+        opacity: 0,
+        y: 5,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: 'power2.inOut',
+
+        scrollTrigger: {
+          trigger: fadeInElement,
+          start: 'top 90%',
+          toggleClass: {
+            targets: fadeInElement,
+            className: 'is-active',
+          },
         },
       }
     );

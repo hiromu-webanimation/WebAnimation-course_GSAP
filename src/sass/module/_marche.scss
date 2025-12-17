@@ -65,16 +65,16 @@
   border: 1px solid var(--brown);
   border-radius: 50%;
   text-decoration: none;
-  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .marche__icon {
-  width: rem(24);
+  width: rem(48);
   object-fit: contain;
 }
 
 .cafe__marche-icon {
-  width: rem(24);
+  width: rem(48);
   object-fit: contain;
   transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -83,7 +83,7 @@
   .marche__link:hover {
     background-color: var(--brown);
     border-color: var(--brown);
-    
+
     .cafe__marche-icon {
       filter: brightness(0) invert(1);
     }
