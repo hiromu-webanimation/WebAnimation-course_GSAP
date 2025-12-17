@@ -1,2 +1,9 @@
 @use 'global' as *;
 
+.js-parallax {
+  position: relative;
+  overflow: hidden;
+  img {
+    height: calc(100% + 10%);
+  }
+}
