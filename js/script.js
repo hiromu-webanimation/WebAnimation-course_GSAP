@@ -17,10 +17,10 @@ jQuery(function ($) {
     gsap.fromTo(
       imgScrubElement,
       {
-        clipPath: 'inset(10% 10% 10% 10% round 30px)',
+        clipPath: 'inset(10% 10% 10% 10% )',
       },
       {
-        clipPath: 'inset(0% 0% 0% 0% round 0px)',
+        clipPath: 'inset(0% 0% 0% 0% )',
         scrollTrigger: {
           trigger: imgScrubElement,
           start: 'top bottom',
