@@ -2,6 +2,46 @@
 // ============================================
 // animation
 // ============================================
+// ローディング
+.fv__title-line {
+  overflow: hidden;
+}
+
+.fv__title-line-span {
+  display: inline-block;
+}
+
+// section-header
+
+@keyframes sectionHeader {
+  0% {
+    transform: translate(rem(-60), rem(-10)) rotate(70deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.section-header__logo {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+}
+
+.section-header__title-en {
+  position: relative;
+  z-index: 2;
+}
+
+.section-header.is-visible {
+  .section-header__logo {
+    animation: sectionHeader 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+}
+
+// parallax
 .js-parallax {
   position: relative;
   overflow: hidden;
@@ -10,13 +50,9 @@
   }
 }
 
-// marche
-.marche {
-  .marche__link {
-    opacity: 0;
-  }
-}
-
+// ============================================
+// marche　インスタアイコンコロコロ
+// ============================================
 @keyframes marcheLink {
   0% {
     opacity: 0;
@@ -28,8 +64,15 @@
   }
 }
 
+.marche {
+  .marche__link {
+    opacity: 0;
+  }
+}
+
 .marche.is-active {
   .marche__link {
-    animation: marcheLink 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.5s;
+    animation: marcheLink 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-delay: 0.5s;
   }
 }
