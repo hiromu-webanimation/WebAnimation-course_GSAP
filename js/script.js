@@ -4,88 +4,98 @@ gsap.set('body', {
 });
 
 // animation======================
-// ローディング〜mvアニメーション
-gsap.set('.header , .fv__nav', {
-  opacity: 0,
-});
 
-const opening = gsap.timeline();
-
-opening
-  .fromTo(
-    '.loader__logo-img',
-    {
-      yPercent: 80,
-      opacity: 0,
-    },
-    {
-      yPercent: 0,
-      opacity: 1,
-      duration: 1,
-      ease: 'power2.inOut',
-    }
-  )
-  .to(
-    '.loader__logo-img',
-    {
-      yPercent: -100,
-      duration: 1,
-      opacity: 0,
-      ease: 'power2.inOut',
-    },
-    '+=0.3'
-  )
-  .to(
-    '.loader',
-    {
-      clipPath: 'inset(0% 0% 100% 0% )',
-      duration: 1,
-      ease: 'power2.inOut',
-    },
-    '<'
-  )
-  .to(
-    '.loader',
-    {
+var webStorage = function () {
+  if (sessionStorage.getItem('access')) {
+    //2回目以降ページを開いたときの処理をここに
+    gsap.set('.loader', {
       display: 'none',
-    },
-    '>'
-  )
-  .fromTo(
-    '.fv__bg',
-    {
-      opacity: 0,
-    },
-    {
-      opacity: 1,
-      duration: 1,
-      ease: 'power2.inOut',
-    },
-    '-=0.8'
-  )
-  .fromTo(
-    '.fv__title-line-span',
-    {
-      yPercent: 100,
-      opacity: 0,
-    },
-    {
-      yPercent: 0,
-      opacity: 1,
-      duration: 1.3,
-      ease: 'power2.inOut',
-    },
-    '<'
-  )
-  .to(
-    '.fv__nav , .header',
-    {
-      opacity: 1,
-      duration: 1,
-      ease: 'power2.inOut',
-    },
-    '-=0.2'
-  );
+    });
+  } else {
+    sessionStorage.setItem('access', 0);
+    //初回ロード時の処理をここに
+
+    const opening = gsap.timeline();
+
+    opening
+      .fromTo(
+        '.loader__logo-img',
+        {
+          yPercent: 80,
+          opacity: 0,
+        },
+        {
+          yPercent: 0,
+          opacity: 1,
+          duration: 1,
+          ease: 'power2.inOut',
+        }
+      )
+      .to(
+        '.loader__logo-img',
+        {
+          yPercent: -100,
+          duration: 1,
+          opacity: 0,
+          ease: 'power2.inOut',
+        },
+        '+=0.3'
+      )
+      .to(
+        '.loader',
+        {
+          clipPath: 'inset(0% 0% 100% 0% )',
+          duration: 1,
+          ease: 'power2.inOut',
+        },
+        '<'
+      )
+      .to(
+        '.loader',
+        {
+          display: 'none',
+        },
+        '>'
+      )
+      .fromTo(
+        '.fv__bg',
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 1,
+          ease: 'power2.inOut',
+        },
+        '-=0.8'
+      )
+      .fromTo(
+        '.fv__title-line-span',
+        {
+          yPercent: 100,
+          opacity: 0,
+        },
+        {
+          yPercent: 0,
+          opacity: 1,
+          duration: 1.3,
+          ease: 'power2.inOut',
+        },
+        '<'
+      )
+      .to(
+        '.fv__nav , .header',
+        {
+          opacity: 1,
+          duration: 1,
+          ease: 'power2.inOut',
+        },
+        '-=0.2'
+      );
+  }
+};
+webStorage();
+// ローディング〜mvアニメーション
 
 // 汎用fadeIn
 let fadeInElements = document.querySelectorAll('.js-fade-in');
