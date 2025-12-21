@@ -10,7 +10,7 @@ opening
   .fromTo(
     '.loader__logo-img',
     {
-      yPercent: 100,
+      yPercent: 80,
       opacity: 0,
     },
     {
