@@ -1,3 +1,8 @@
+//js読み込み時間差対策
+gsap.set('body', {
+  opacity: 1,
+});
+
 // animation======================
 // ローディング〜mvアニメーション
 gsap.set('.header , .fv__nav', {

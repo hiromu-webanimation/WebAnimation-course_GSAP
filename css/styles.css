@@ -175,6 +175,10 @@ html {
   word-wrap: break-word;
 }
 
+body {
+  opacity: 0;
+}
+
 .fv__title-line {
   overflow: hidden;
 }
